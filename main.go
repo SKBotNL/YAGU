@@ -30,14 +30,14 @@ func main() {
 		return
 	}
 
-	commandout, err := exec.Command("whereis", "tar").Output()
+	commandout, err := exec.Command("whereis", "bsdtar").Output()
 	if err != nil {
 		log.Fatal(err)
 	}
 	commandoutput := strings.TrimSuffix(string(commandout), "\n")
 
-	if commandoutput == "tar:" {
-		fmt.Println("Tar not found")
+	if commandoutput == "bsdtar:" {
+		fmt.Println("Bsdtar not found")
 		return
 	}
 
