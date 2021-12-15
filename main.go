@@ -107,7 +107,7 @@ func updatewaterfox() {
 		log.Fatal(err)
 	}
 
-	req.Header.Set("User-Agent", "YAU")
+	req.Header.Set("User-Agent", "YARU")
 	res, error := httpclient.Do(req)
 	if error != nil {
 		log.Fatal(error)
