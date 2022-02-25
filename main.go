@@ -269,13 +269,13 @@ func updatemultimc() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	resp, err = http.Get("https://files.multimc.org/branding/multimc.svg")
+	resp, err = http.Get("https://avatars2.githubusercontent.com/u/5411890")
 	if err != nil {
 		log.Fatal(err)
 	}
 	defer resp.Body.Close()
 
-	out, err = os.Create("/opt/multimc-dev/MultiMC.svg")
+	out, err = os.Create("/opt/multimc-dev/MultiMC.png")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -286,7 +286,7 @@ func updatemultimc() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	desktopfile := "[Desktop Entry]\nName=MultiMC Development\nGenericName=Minecraft Launcher\nComment=Free, open source launcher and instance manager for Minecraft.\nType=Application\nTerminal=false\nExec=/opt/multimc-dev/MultiMC\nIcon=/opt/multimc-dev/MultiMC.svg\nCategories=Game\nKeywords=game;minecraft;"
+	desktopfile := "[Desktop Entry]\nName=MultiMC Development\nGenericName=Minecraft Launcher\nComment=Free, open source launcher and instance manager for Minecraft.\nType=Application\nTerminal=false\nExec=/opt/multimc-dev/MultiMC\nIcon=/opt/multimc-dev/MultiMC.png\nCategories=Game\nKeywords=game;minecraft;"
 	err = ioutil.WriteFile("/usr/share/applications/MultiMC-Development.desktop", []byte(desktopfile), 0777)
 	if err != nil {
 		log.Fatal(err)
