@@ -1,4 +1,4 @@
-# YARU: Yet Another Random Updater
+# YAGU: Yet Another Go Updater
 A simple updater written in Go to update or install Waterfox, VSCode Insiders and MultiMC (more coming soon).
 
 
