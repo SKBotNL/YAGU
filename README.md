@@ -1,3 +1,4 @@
+# Deprecated: Please use the packages from the AUR instead. [MultiMC](https://aur.archlinux.org/packages/multimc-development-bin), [Ungoogled Chromium](https://aur.archlinux.org/packages/ungoogled-chromium-linchrome-bin)
 # YAGU: Yet Another Go Updater
 A simple updater written in Go to update or install Waterfox, VSCode Insiders and MultiMC (more coming soon).
 
